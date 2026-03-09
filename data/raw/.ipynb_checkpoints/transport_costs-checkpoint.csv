@@ -1,0 +1,9 @@
+route_id,origin_location,market,distance_km,cost_per_trip,capacity_kg
+1,northcentral,lagos,435,1078.11,6529
+2,northcentral,ibadan,307,565.29,4300
+3,northcentral,abuja,97,240.31,6395
+4,northcentral,minna,126,305.39,6784
+5,southwest,lagos,332,691.05,4772
+6,southwest,ibadan,301,629.86,3056
+7,southwest,abuja,85,184.93,3732
+8,southwest,minna,303,588.38,6889
