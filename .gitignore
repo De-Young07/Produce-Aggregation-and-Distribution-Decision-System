@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+
+# virtual environments
+venv/
+.env
+
+# data folders
+data/raw/*
+data/processed/*
+data/features/*
+
+# logs
+data/logs/*
+
+# DVC cache
+.dvc/cache
+
+# MLflow
+mlruns/
+
+# OS files
+.DS_Store
+Thumbs.db
