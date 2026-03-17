@@ -1,0 +1,26 @@
+database:
+  host: localhost
+  user: root
+  password: Adebc4real
+  database: agri_pipeline
+
+data:
+  start_date: 2022-01-01
+  end_date: 2025-12-31
+
+entities:
+  crops:
+    - maize
+    - rice
+    - tomatoes
+    - cassava
+    - palm oil
+
+  markets:
+    - lagos
+    - abuja
+    - kano
+    - ibadan
+    - kaduna
+
+  farmers: 50
