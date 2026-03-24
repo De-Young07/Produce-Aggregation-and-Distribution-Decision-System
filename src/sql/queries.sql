@@ -44,6 +44,18 @@ CREATE TABLE transport_costs (
     capacity_kg INT
 );
 
+
+CREATE TABLE IF NOT EXISTS forecasts (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    date DATE,
+    crop VARCHAR(50),
+    market VARCHAR(50),
+    model VARCHAR(20),
+    forecast_value FLOAT
+);
+
+
+
 SHOW VARIABLES LIKE 'secure_file_priv';
 
 
@@ -302,3 +314,16 @@ SELECT
     COUNT(*) AS observations
 FROM daily_market_prices
 GROUP BY crop, market;
+
+-- 22
+SELECT 
+    p.date,
+    p.crop,
+    p.market,
+    p.price_per_kg AS actual_price,
+    f.forecast_value
+FROM prices p
+LEFT JOIN forecasts f
+ON p.date = f.date
+AND p.crop = f.crop
+AND p.market = f.market

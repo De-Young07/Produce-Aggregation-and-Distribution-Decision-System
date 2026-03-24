@@ -5,3 +5,7 @@ mysql-connector-python
 faker
 python-dotenv
 mlflow
+statsmodels
+prophet
+scikit-learn
+mlflow
