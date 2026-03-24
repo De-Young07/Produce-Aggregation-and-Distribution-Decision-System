@@ -9,3 +9,4 @@ statsmodels
 prophet
 scikit-learn
 mlflow
+plotly
